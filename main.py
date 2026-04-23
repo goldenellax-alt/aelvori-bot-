@@ -5,8 +5,8 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 from flask import Flask
 import threading
 
-TELEGRAM_TOKEN = os.environ['8600903036:AAGQNljqU8UQgnBnb4KcE3otxX2RhUjxTko']
-GEMINI_KEY = os.environ['AIzaSyCbHixnPFEafCX_DNPEnxdahfLm9z6HDOg']
+TELEGRAM_TOKEN = os.environ['TELEGRAM_TOKEN']
+GEMINI_KEY = os.environ['GEMINI_KEY']
 
 genai.configure(api_key=GEMINI_KEY)
 model = genai.GenerativeModel('gemini-1.5-flash')
